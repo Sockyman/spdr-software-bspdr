@@ -1,0 +1,9 @@
+#ifndef DIV_BS
+#define DIV_BS
+
+include_asm "std:divide_16.spdr";
+
+extern div("divide_16", {"math.number_1", "math.number_2"}, A:X);
+
+#endif
+

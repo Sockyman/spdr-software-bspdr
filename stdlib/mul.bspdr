@@ -1,0 +1,9 @@
+#ifndef MUL_BS
+#define MUL_BS
+
+include_asm "std:multiply_16.spdr";
+
+extern mul("multiply_16", {"math.number_1", "math.number_2"}, A:X);
+
+#endif
+

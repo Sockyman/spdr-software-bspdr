@@ -1,0 +1,9 @@
+#ifndef READ_SCANCODE_BS
+#define READ_SCANCODE_BS
+
+include_asm "std:read_scancode.spdr";
+
+extern read_scancode("read_scancode", {}, A:);
+
+#endif
+

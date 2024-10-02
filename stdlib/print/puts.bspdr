@@ -1,0 +1,9 @@
+#ifndef PUTS_BS
+#define PUTS_BS
+
+include_asm "std:print_string.spdr";
+
+extern puts("print_string", {X:Y});
+
+#endif
+

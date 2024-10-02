@@ -1,0 +1,11 @@
+#ifndef CURSOR_BS
+#define CURSOR_BS
+
+#include <lcd/lcd_def.bspdr>
+#include <lcd/lcd_command.bspdr>
+
+cursor(line, char) \
+    lcd_command(LCD_DDRAM | (line << 6) | char);
+
+#endif
+

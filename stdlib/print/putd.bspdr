@@ -1,0 +1,9 @@
+#ifndef PUTD_BS
+#define PUTD_BS
+
+include_asm "std:print_decimal_16.spdr";
+
+extern putd("print_decimal_16", {A:X});
+
+#endif
+

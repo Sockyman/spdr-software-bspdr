@@ -1,0 +1,9 @@
+#ifndef MOD_BS
+#define MOD_BS
+
+include_asm "std:divide_16.spdr";
+
+extern mod("divide_16", {"math.number_1", "math.number_2"}, "math.remainder");
+
+#endif
+

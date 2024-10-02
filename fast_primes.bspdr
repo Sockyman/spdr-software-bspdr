@@ -1,0 +1,47 @@
+#include <lcd/lcd_init.bspdr>
+#include <lcd/clear.bspdr>
+#include <lcd/cursor.bspdr>
+#include <print/putd.bspdr>
+#include <out.bspdr>
+
+#define MAX_COUNT 1000
+
+
+let primes;
+
+build_sieve()
+{
+    lcd_init(0);
+
+    let prime_count = 0;
+    primes = arr [MAX_COUNT];
+
+    for (let i = 0; i < MAX_COUNT; i += 1)
+    {
+        primes[i] = 1;
+    }
+
+    for (let i = 2; i < MAX_COUNT; i += 1)
+    {
+        if (primes[i])
+        {
+            cursor(0, 0);
+            putd(i);
+            prime_count += 1;
+            for (let multiple = i << 1; multiple < MAX_COUNT; multiple += i)
+            {
+                primes[multiple] = 0;
+            }
+        }
+    }
+
+    clear();
+    putd(prime_count);
+    return prime_count;
+}
+
+main()
+{
+    build_sieve();
+}
+

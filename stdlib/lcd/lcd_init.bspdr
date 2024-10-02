@@ -1,0 +1,9 @@
+#ifndef LCD_INIT_BS
+#define LCD_INIT_BS
+
+include_asm "std:lcd_init.spdr";
+
+extern lcd_init("lcd_init", {A:});
+
+#endif
+

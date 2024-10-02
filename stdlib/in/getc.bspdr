@@ -1,0 +1,9 @@
+#ifndef GETC_BS
+#define GETC_BS
+
+include_asm "std:getc.spdr";
+
+extern getc("getc", {}, A:);
+
+#endif
+

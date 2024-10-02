@@ -1,0 +1,9 @@
+#ifndef STRLEN_BS
+#define STRLEN_BS
+
+include_asm "std:string_length.spdr";
+
+extern strlen("string_length", {X:Y}, X:Y);
+
+#endif
+

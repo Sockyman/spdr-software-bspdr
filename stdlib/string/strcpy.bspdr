@@ -1,0 +1,9 @@
+#ifndef STRCPY_BS
+#define STRCPY_BS
+
+include_asm "std:string_copy.spdr";
+
+extern strcpy("string_copy", {"string_copy.src", "string_copy.dest"});
+
+#endif
+

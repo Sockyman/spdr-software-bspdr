@@ -1,0 +1,11 @@
+#ifndef BOOL_BS
+#define BOOL_BS
+
+// Note: Never directly comapre boolean values!
+// as any non zero value is 'true': one 'true' may not equal another 'true'.
+
+#define false 0
+#define true 1
+
+#endif
+
